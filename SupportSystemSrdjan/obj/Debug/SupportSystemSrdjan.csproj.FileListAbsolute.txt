@@ -1,0 +1,160 @@
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\SupportSystemSrdjan.dll.config
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\SupportSystemSrdjan.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\SupportSystemSrdjan.pdb
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csc.exe
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csc.exe.config
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csc.rsp
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csi.exe
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csi.exe.config
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csi.rsp
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.AppContext.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Console.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.Compression.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Claims.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.ValueTuple.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\vbc.exe
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\vbc.exe.config
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\vbc.rsp
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\VBCSCompiler.exe
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\Antlr3.Runtime.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\Newtonsoft.Json.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Helpers.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Mvc.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Optimization.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Razor.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.Razor.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\WebGrease.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Helpers.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Mvc.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Optimization.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Razor.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.Razor.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\Newtonsoft.Json.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\Antlr3.Runtime.pdb
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.csproj.CoreCompileInputs.cache
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.csproj.CopyComplete
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.pdb
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\EntityFramework.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\EntityFramework.SqlServer.dll
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\EntityFramework.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\bin\EntityFramework.SqlServer.xml
+C:\Users\Axelyos\Desktop\Supper System\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.csprojAssemblyReference.cache
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\SupportSystemSrdjan.dll.config
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\SupportSystemSrdjan.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\SupportSystemSrdjan.pdb
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csc.exe
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csc.exe.config
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csc.rsp
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csi.exe
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csi.exe.config
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\csi.rsp
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.AppContext.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Console.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.Compression.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Claims.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.ValueTuple.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\vbc.exe
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\vbc.exe.config
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\vbc.rsp
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\VBCSCompiler.exe
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\Antlr3.Runtime.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\EntityFramework.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\EntityFramework.SqlServer.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\Newtonsoft.Json.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Helpers.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Mvc.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Optimization.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Razor.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.Razor.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\WebGrease.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\EntityFramework.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\EntityFramework.SqlServer.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Helpers.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Mvc.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Optimization.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.Razor.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\System.Web.WebPages.Razor.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\Newtonsoft.Json.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\Antlr3.Runtime.pdb
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.csproj.CoreCompileInputs.cache
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.csproj.CopyComplete
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.dll
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.pdb
+C:\Users\Axelyos\Desktop\Support System Srdjan\SupportSystemSrdjan\SupportSystemSrdjan\obj\Debug\SupportSystemSrdjan.csprojAssemblyReference.cache

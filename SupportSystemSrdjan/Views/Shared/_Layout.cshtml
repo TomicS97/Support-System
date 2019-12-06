@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>@ViewBag.Title - Support System</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Izgled.css")
+    @Styles.Render("~/Content/Nav.css")
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <div style="margin-left: 74%">
+                    <h5>@(Session["User"].ToString())</h5>
+                </div>
+                <div>
+                    <button href="#" type="button" style="margin-left: 73%" class="btn w3-red a-btn-slide-text" onclick="location.href='@Url.Action("LogOut", "Account")'">
+                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                        <span><strong>Log Out</strong></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            <nav role="navigation" class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3; width:300px; font-weight:bold;">
+                <div>
+                    <h2 style="text-align:center" onclick="location.href='@Url.Action("Index", "Main")'" class="w3-padding-64">Support system</h2>
+                </div>
+                <div class="w3-bar-block">
+                    <ul>
+                        @{
+                            if (Session["Rola"].ToString() == "3")
+                            {
+                                <li>
+                                    <a href="#" onclick="location.href='@Url.Action("Index", "Main")'" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none;">
+                                        <span class="glyphicon glyphicon-home" style="margin-right:10px" aria-hidden="true"></span>
+                                        <span><strong>Home</strong></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none">
+                                        <span class="glyphicon glyphicon-user" style="margin-right:10px" aria-hidden="true"></span>
+                                        <span><strong>Admin section</strong></span>
+                                    </a>
+                                    <ul class="dropdown" style="text-decoration:none; ">
+                                        <li><a href="#usermenagment" onclick="location.href='@Url.Action("Index", "User")'" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none">User menagment</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#systemsection" onclick="location.href='@Url.Action("Index", "Section")'" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none">
+                                        <span class="glyphicon glyphicon-folder-open" style="margin-right:10px" aria-hidden="true"></span>
+                                        <span><strong>System section</strong></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#supportstatus" onclick="location.href='@Url.Action("Index", "Status")'" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none">
+                                        <span class="glyphicon glyphicon-folder-open" style="margin-right:10px" aria-hidden="true"></span>
+                                        <span><strong>Support status</strong></span>
+                                    </a>
+                                </li>
+                            }
+
+                            if (Session["Rola"].ToString() == "4")
+                            {
+                                <li><a href="#" onclick="location.href='@Url.Action("Index", "Main")'" class="w3-bar-item w3-button w3-hover-white" style="text-decoration: none;">Home</a></li>
+                            }
+                        }
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="col-md-9">
+            <div class="container body-content">
+                @RenderBody()
+
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+@section script{
+  
+
+
+
+}

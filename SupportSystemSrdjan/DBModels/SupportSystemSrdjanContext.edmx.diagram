@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c42df2da173a48238c465ec9f576a94b" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.Comment" Width="1.5" PointX="0.75" PointY="9" />
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.Main" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.SupportSystemCategory" Width="1.5" PointX="0.75" PointY="11.375" />
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.SupportSystemPriority" Width="1.5" PointX="0.75" PointY="16" />
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.SupportSystemRole" Width="1.5" PointX="5.75" PointY="1.75" />
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.SupportSystemSection" Width="1.5" PointX="0.75" PointY="6.5" />
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.SupportSystemSeverity" Width="1.5" PointX="0.75" PointY="13.75" />
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.SupportSystemStatu" Width="1.5" PointX="0.75" PointY="3" />
+        <EntityTypeShape EntityType="SupportSystemSrdjanModel.User" Width="1.5" PointX="8" PointY="1" />
+        <AssociationConnector Association="SupportSystemSrdjanModel.FK_Main_Comment" />
+        <AssociationConnector Association="SupportSystemSrdjanModel.FK_Main_SupportSystemCategory" />
+        <AssociationConnector Association="SupportSystemSrdjanModel.FK_Main_SupportSystemPriority" />
+        <AssociationConnector Association="SupportSystemSrdjanModel.FK_Main_SupportSystemSection" />
+        <AssociationConnector Association="SupportSystemSrdjanModel.FK_Main_SupportSystemSeverity" />
+        <AssociationConnector Association="SupportSystemSrdjanModel.FK_Main_SupportSystemStatus" />
+        <AssociationConnector Association="SupportSystemSrdjanModel.FK_User_Roles" />
+        <AssociationConnector Association="SupportSystemSrdjanModel.UserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

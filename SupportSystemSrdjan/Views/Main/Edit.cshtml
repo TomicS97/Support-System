@@ -1,0 +1,187 @@
+﻿@model SupportSystemSrdjan.Models.MainViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    @Styles.Render("~/Content/FormControl.css")
+    @Styles.Render("~/Content/Button.css")
+    var coment = ViewBag.Comment as List<SupportSystemSrdjan.Models.CommentViewModel>;
+}
+
+@using (Html.BeginForm())
+{
+    <div class="col-md-10">
+
+        <div class="row">
+            <div class="col-md-7">
+                <h3>Edit Suggestion</h3>
+            </div>
+            <div class="col-md-5">
+                <div style="margin-left: 35%">
+                    <button type="button" class="btn w3-red a-btn-slide-text" onclick="location.href='@Url.Action("Index", "Main")'">
+                        <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+                        <span><strong>Back to list</strong></span>
+                    </button>
+                    <button href="#" type="submit" class="btn w3-red a-btn-slide-text">
+                        <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+                        <span><strong>Save</strong></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <hr />
+        @Html.AntiForgeryToken()
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.ID)
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SugestionNo, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.SugestionNo, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.SugestionNo, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CreatedBy, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CreatedBy, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CreatedBy, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CreatedOn, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CreatedOn, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CreatedOn, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.StatusID, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.StatusID, ViewBag.Status as List<SelectListItem>, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.StatusID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.CategoryID, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.CategoryID, ViewBag.Category as List<SelectListItem>, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SectionID, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.SectionID, ViewBag.Section as List<SelectListItem>, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SectionID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SeverityID, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.SeverityID, ViewBag.Severity as List<SelectListItem>, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.SeverityID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.StepsToReproduce, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.StepsToReproduce, new { htmlAttributes = new { @class = "form-control2" } })
+                            @Html.ValidationMessageFor(model => model.StepsToReproduce, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.PriorityID, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.PriorityID, ViewBag.Priority as List<SelectListItem>, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.PriorityID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.AcceptedOn, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.AcceptedOn, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.AcceptedOn, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DueOn, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DueOn, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DueOn, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ResolvedOn, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ResolvedOn, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ResolvedOn, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ResolveNotes, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ResolveNotes, new { htmlAttributes = new { @class = "form-control2" } })
+                            @Html.ValidationMessageFor(model => model.ResolveNotes, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>Comments:</h4>
+                <br />
+                <br />
+                <div style="margin-left: 30%">
+                    <button type="button" class="btn w3-red a-btn-slide-text" id="AddComment">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        <span><strong>Add Comment</strong></span>
+                    </button>
+                    <button href="#" type="button" id="Save" class="btn w3-red a-btn-slide-text">
+                        <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+                        <span><strong>Save</strong></span>
+                    </button>
+                </div>
+                <br />
+                <div id="Comment"></div>
+                <br />
+                <div class="col-md-6" id="Add">
+
+                    @foreach (var item in coment)
+                    {
+                        <div style="margin-right: 30%" class="form-control">
+                            <p>
+                                @item.CommentName
+                            </p>
+                        </div>
+                        <br />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@section scripts{
+    <script src="~/Scripts/App/Comment.js"></script>
+}

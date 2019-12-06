@@ -1,0 +1,34 @@
+﻿li {
+    display: block;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    position: relative;
+}
+
+    li:hover {
+        cursor: pointer;
+    }
+
+ul li ul {
+    visibility: hidden;
+    opacity: 1;
+    position: absolute;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+    ul li:hover > ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SupportSystemSrdjanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SupportSystemSrdjanContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Comments" EntityType="SupportSystemSrdjanModel.Comment" />
+    <EntitySet Name="Mains" EntityType="SupportSystemSrdjanModel.Main" />
+    <EntitySet Name="SupportSystemCategories" EntityType="SupportSystemSrdjanModel.SupportSystemCategory" />
+    <EntitySet Name="SupportSystemPriorities" EntityType="SupportSystemSrdjanModel.SupportSystemPriority" />
+    <EntitySet Name="SupportSystemRoles" EntityType="SupportSystemSrdjanModel.SupportSystemRole" />
+    <EntitySet Name="SupportSystemSections" EntityType="SupportSystemSrdjanModel.SupportSystemSection" />
+    <EntitySet Name="SupportSystemSeverities" EntityType="SupportSystemSrdjanModel.SupportSystemSeverity" />
+    <EntitySet Name="SupportSystemStatus" EntityType="SupportSystemSrdjanModel.SupportSystemStatu" />
+    <EntitySet Name="Users" EntityType="SupportSystemSrdjanModel.User" />
+    <AssociationSet Name="FK_Main_Comment" Association="SupportSystemSrdjanModel.FK_Main_Comment">
+      <End Role="Comment" EntitySet="Comments" />
+      <End Role="Main" EntitySet="Mains" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemCategory" Association="SupportSystemSrdjanModel.FK_Main_SupportSystemCategory">
+      <End Role="SupportSystemCategory" EntitySet="SupportSystemCategories" />
+      <End Role="Main" EntitySet="Mains" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemPriority" Association="SupportSystemSrdjanModel.FK_Main_SupportSystemPriority">
+      <End Role="SupportSystemPriority" EntitySet="SupportSystemPriorities" />
+      <End Role="Main" EntitySet="Mains" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemSection" Association="SupportSystemSrdjanModel.FK_Main_SupportSystemSection">
+      <End Role="SupportSystemSection" EntitySet="SupportSystemSections" />
+      <End Role="Main" EntitySet="Mains" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemSeverity" Association="SupportSystemSrdjanModel.FK_Main_SupportSystemSeverity">
+      <End Role="SupportSystemSeverity" EntitySet="SupportSystemSeverities" />
+      <End Role="Main" EntitySet="Mains" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemStatus" Association="SupportSystemSrdjanModel.FK_Main_SupportSystemStatus">
+      <End Role="SupportSystemStatu" EntitySet="SupportSystemStatus" />
+      <End Role="Main" EntitySet="Mains" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Roles" Association="SupportSystemSrdjanModel.FK_User_Roles">
+      <End Role="SupportSystemRole" EntitySet="SupportSystemRoles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="UserRoles" Association="SupportSystemSrdjanModel.UserRoles">
+      <End Role="SupportSystemRole" EntitySet="SupportSystemRoles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CommentName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Mains" Relationship="SupportSystemSrdjanModel.FK_Main_Comment" FromRole="Comment" ToRole="Main" />
+  </EntityType>
+  <EntityType Name="Main">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SugestionNo" Type="Int32" />
+    <Property Name="CreatedBy" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="StatusID" Type="Int32" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="AcceptedOn" Type="DateTime" Precision="3" />
+    <Property Name="DueOn" Type="DateTime" Precision="3" />
+    <Property Name="ResolvedOn" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="PriorityID" Type="Int32" />
+    <Property Name="Steps" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SectionID" Type="Int32" />
+    <Property Name="StepsToReproduce" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="SeverityID" Type="Int32" />
+    <Property Name="CommentID" Type="Int32" />
+    <NavigationProperty Name="Comment" Relationship="SupportSystemSrdjanModel.FK_Main_Comment" FromRole="Main" ToRole="Comment" />
+    <NavigationProperty Name="SupportSystemCategory" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemCategory" FromRole="Main" ToRole="SupportSystemCategory" />
+    <NavigationProperty Name="SupportSystemPriority" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemPriority" FromRole="Main" ToRole="SupportSystemPriority" />
+    <NavigationProperty Name="SupportSystemSection" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemSection" FromRole="Main" ToRole="SupportSystemSection" />
+    <NavigationProperty Name="SupportSystemSeverity" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemSeverity" FromRole="Main" ToRole="SupportSystemSeverity" />
+    <NavigationProperty Name="SupportSystemStatu" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemStatus" FromRole="Main" ToRole="SupportSystemStatu" />
+  </EntityType>
+  <EntityType Name="SupportSystemCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Mains" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemCategory" FromRole="SupportSystemCategory" ToRole="Main" />
+  </EntityType>
+  <EntityType Name="SupportSystemPriority">
+    <Key>
+      <PropertyRef Name="PriorityID" />
+    </Key>
+    <Property Name="PriorityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PriorityName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Mains" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemPriority" FromRole="SupportSystemPriority" ToRole="Main" />
+  </EntityType>
+  <EntityType Name="SupportSystemRole">
+    <Key>
+      <PropertyRef Name="RolesID" />
+    </Key>
+    <Property Name="RolesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RolesName" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="SupportSystemSrdjanModel.FK_User_Roles" FromRole="SupportSystemRole" ToRole="User" />
+    <NavigationProperty Name="Users1" Relationship="SupportSystemSrdjanModel.UserRoles" FromRole="SupportSystemRole" ToRole="User" />
+  </EntityType>
+  <EntityType Name="SupportSystemSection">
+    <Key>
+      <PropertyRef Name="SectionID" />
+    </Key>
+    <Property Name="SectionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SectionName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Mains" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemSection" FromRole="SupportSystemSection" ToRole="Main" />
+  </EntityType>
+  <EntityType Name="SupportSystemSeverity">
+    <Key>
+      <PropertyRef Name="SeverityID" />
+    </Key>
+    <Property Name="SeverityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SeverityName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Mains" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemSeverity" FromRole="SupportSystemSeverity" ToRole="Main" />
+  </EntityType>
+  <EntityType Name="SupportSystemStatu">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="Int32" Nullable="false" />
+    <Property Name="StatusName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Mains" Relationship="SupportSystemSrdjanModel.FK_Main_SupportSystemStatus" FromRole="SupportSystemStatu" ToRole="Main" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RolesID" Type="Int32" />
+    <Property Name="Aktivan" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SupportSystemRole" Relationship="SupportSystemSrdjanModel.FK_User_Roles" FromRole="User" ToRole="SupportSystemRole" />
+    <NavigationProperty Name="SupportSystemRoles" Relationship="SupportSystemSrdjanModel.UserRoles" FromRole="User" ToRole="SupportSystemRole" />
+  </EntityType>
+  <Association Name="FK_Main_Comment">
+    <End Type="SupportSystemSrdjanModel.Comment" Role="Comment" Multiplicity="0..1" />
+    <End Type="SupportSystemSrdjanModel.Main" Role="Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comment">
+        <PropertyRef Name="CommentID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="CommentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemCategory">
+    <End Type="SupportSystemSrdjanModel.SupportSystemCategory" Role="SupportSystemCategory" Multiplicity="0..1" />
+    <End Type="SupportSystemSrdjanModel.Main" Role="Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemCategory">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemPriority">
+    <End Type="SupportSystemSrdjanModel.SupportSystemPriority" Role="SupportSystemPriority" Multiplicity="0..1" />
+    <End Type="SupportSystemSrdjanModel.Main" Role="Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemPriority">
+        <PropertyRef Name="PriorityID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="PriorityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemSection">
+    <End Type="SupportSystemSrdjanModel.SupportSystemSection" Role="SupportSystemSection" Multiplicity="0..1" />
+    <End Type="SupportSystemSrdjanModel.Main" Role="Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemSection">
+        <PropertyRef Name="SectionID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="SectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemSeverity">
+    <End Type="SupportSystemSrdjanModel.SupportSystemSeverity" Role="SupportSystemSeverity" Multiplicity="0..1" />
+    <End Type="SupportSystemSrdjanModel.Main" Role="Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemSeverity">
+        <PropertyRef Name="SeverityID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="SeverityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemStatus">
+    <End Type="SupportSystemSrdjanModel.SupportSystemStatu" Role="SupportSystemStatu" Multiplicity="0..1" />
+    <End Type="SupportSystemSrdjanModel.Main" Role="Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemStatu">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Roles">
+    <End Type="SupportSystemSrdjanModel.SupportSystemRole" Role="SupportSystemRole" Multiplicity="0..1" />
+    <End Type="SupportSystemSrdjanModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemRole">
+        <PropertyRef Name="RolesID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RolesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserRoles">
+    <End Type="SupportSystemSrdjanModel.SupportSystemRole" Role="SupportSystemRole" Multiplicity="*" />
+    <End Type="SupportSystemSrdjanModel.User" Role="User" Multiplicity="*" />
+  </Association>
+</Schema>

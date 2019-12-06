@@ -1,0 +1,120 @@
+﻿@model IEnumerable<SupportSystemSrdjan.Models.MainViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    @Styles.Render("~/Content/Text.css")
+
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Support List</h3>
+    </div>
+    <div class="col-md-6">
+        <div style="margin-left: 13%">
+            <button href="#" type="button" class="btn w3-red a-btn-slide-text" onclick="location.href='@Url.Action("Create", "Main")'">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                <span><strong>Add Suggestion</strong></span>
+            </button>
+            <button href="#" type="button" class="btn w3-red a-btn-slide-text" onclick="location.href='@Url.Action("Index", "Home")'">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                <span><strong>Close</strong></span>
+            </button>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="col-md-10">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr>
+                <th style="text-align:center">
+                    <p>Action</p>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SugestionNo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StatusName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CategoryName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SeverityName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PriorityName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedBy)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedOn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DueOn)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ResolvedOn)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="row">
+                            <a href="#" class="btn btn-primary btn-xs a-btn-slide-text" onclick="location.href='@Url.Action("Edit", "Main", new { id = item.ID })'">
+                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </a>
+                            <a href="#" class="btn w3-red btn-xs a-btn-slide-text" onclick="location.href='@Url.Action("Delete", "Main", new { id = item.ID })'">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SugestionNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StatusName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SeverityName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PriorityName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreatedBy)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreatedOn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DueOn)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ResolvedOn)
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Content/DX/js/dx.all.js"></script>
+}

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<SupportSystemSrdjan.Models.StatusViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    @Styles.Render("~/Content/Text.css")
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h3>System Statuses List</h3>
+    </div>
+    <div class="col-md-4">
+        <div style="margin-left: 4%">
+            <button href="#" type="button" class="btn w3-red a-btn-slide-text" onclick="location.href='@Url.Action("Create", "Status")'">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                <span><strong>Create</strong></span>
+            </button>
+        </div>
+    </div>
+</div>
+<br />
+<div class="col-md-10">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    <p>Action</p>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StatusName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="row">
+                            <a href="#" class="btn btn-primary btn-xs a-btn-slide-text" onclick="location.href='@Url.Action("Edit", "Status", new { id = item.StatusID })'">
+                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </a>
+                            <a href="#" class="btn w3-red btn-xs a-btn-slide-text" onclick="location.href='@Url.Action("Delete","Status", new { id = item.StatusID })'">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StatusName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

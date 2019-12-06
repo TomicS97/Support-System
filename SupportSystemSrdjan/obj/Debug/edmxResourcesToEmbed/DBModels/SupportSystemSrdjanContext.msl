@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SupportSystemSrdjanModelStoreContainer" CdmEntityContainer="SupportSystemSrdjanContext">
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="CommentName" ColumnName="CommentName" />
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mains">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.Main">
+        <MappingFragment StoreEntitySet="Main">
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="SeverityID" ColumnName="SeverityID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="StepsToReproduce" ColumnName="StepsToReproduce" />
+          <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Steps" ColumnName="Steps" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+          <ScalarProperty Name="ResolvedOn" ColumnName="ResolvedOn" />
+          <ScalarProperty Name="DueOn" ColumnName="DueOn" />
+          <ScalarProperty Name="AcceptedOn" ColumnName="AcceptedOn" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="SugestionNo" ColumnName="SugestionNo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupportSystemCategories">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.SupportSystemCategory">
+        <MappingFragment StoreEntitySet="SupportSystemCategory">
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupportSystemPriorities">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.SupportSystemPriority">
+        <MappingFragment StoreEntitySet="SupportSystemPriority">
+          <ScalarProperty Name="PriorityName" ColumnName="PriorityName" />
+          <ScalarProperty Name="PriorityID" ColumnName="PriorityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupportSystemRoles">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.SupportSystemRole">
+        <MappingFragment StoreEntitySet="SupportSystemRole">
+          <ScalarProperty Name="RolesName" ColumnName="RolesName" />
+          <ScalarProperty Name="RolesID" ColumnName="RolesID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupportSystemSections">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.SupportSystemSection">
+        <MappingFragment StoreEntitySet="SupportSystemSection">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupportSystemSeverities">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.SupportSystemSeverity">
+        <MappingFragment StoreEntitySet="SupportSystemSeverity">
+          <ScalarProperty Name="SeverityName" ColumnName="SeverityName" />
+          <ScalarProperty Name="SeverityID" ColumnName="SeverityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupportSystemStatus">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.SupportSystemStatu">
+        <MappingFragment StoreEntitySet="SupportSystemStatus">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SupportSystemSrdjanModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Aktivan" ColumnName="Aktivan" />
+          <ScalarProperty Name="RolesID" ColumnName="RolesID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UserRoles" TypeName="SupportSystemSrdjanModel.UserRoles" StoreEntitySet="UserRoles">
+      <EndProperty Name="User">
+        <ScalarProperty Name="UserID" ColumnName="UserID" />
+      </EndProperty>
+      <EndProperty Name="SupportSystemRole">
+        <ScalarProperty Name="RolesID" ColumnName="RolesID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

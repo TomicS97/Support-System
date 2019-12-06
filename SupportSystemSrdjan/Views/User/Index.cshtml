@@ -1,0 +1,91 @@
+﻿@model IEnumerable<SupportSystemSrdjan.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    @Styles.Render("~/Content/Text.css")
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h3>Create/Edit User</h3>
+    </div>
+    <div class="col-md-4">
+        <div style="margin-left: 5%">
+            <button href="#" type="button" class="btn w3-red a-btn-slide-text" onclick="location.href='@Url.Action("Create", "User")'">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                <span><strong>Create</strong></span>
+            </button>
+        </div>
+    </div>
+</div>
+<br />
+<div class="col-md-10" >
+    <div class="table-responsive">
+        <table class="table table-bordered table-responsive">
+            <tr>
+                <th>
+                    <p>Action</p>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FullName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Country)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RolesName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Aktivan)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="row">
+                            <a href="#" class="btn btn-primary btn-xs a-btn-slide-text" onclick="location.href='@Url.Action("Edit", "User", new { id = item.UserID })'">
+                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </a>
+                            <a href="#" class="btn w3-red btn-xs a-btn-slide-text" onclick="location.href='@Url.Action("Delete","User", new { id = item.UserID })'">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Country)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RolesName)
+                    </td>
+                    <td style="text-align:center">
+                        @Html.CheckBoxFor(modelItem => item.Aktivan)
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

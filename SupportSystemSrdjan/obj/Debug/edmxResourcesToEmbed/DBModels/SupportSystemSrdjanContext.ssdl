@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SupportSystemSrdjanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CommentName" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Main">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SugestionNo" Type="int" />
+    <Property Name="CreatedBy" Type="nchar" MaxLength="30" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="StatusID" Type="int" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="AcceptedOn" Type="datetime" />
+    <Property Name="DueOn" Type="datetime" />
+    <Property Name="ResolvedOn" Type="nchar" MaxLength="50" />
+    <Property Name="PriorityID" Type="int" />
+    <Property Name="Steps" Type="nvarchar(max)" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="SectionID" Type="int" />
+    <Property Name="StepsToReproduce" Type="nchar" MaxLength="30" />
+    <Property Name="Title" Type="nchar" MaxLength="30" />
+    <Property Name="SeverityID" Type="int" />
+    <Property Name="CommentID" Type="int" />
+  </EntityType>
+  <EntityType Name="SupportSystemCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SupportSystemPriority">
+    <Key>
+      <PropertyRef Name="PriorityID" />
+    </Key>
+    <Property Name="PriorityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PriorityName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SupportSystemRole">
+    <Key>
+      <PropertyRef Name="RolesID" />
+    </Key>
+    <Property Name="RolesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RolesName" Type="nchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SupportSystemSection">
+    <Key>
+      <PropertyRef Name="SectionID" />
+    </Key>
+    <Property Name="SectionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SectionName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SupportSystemSeverity">
+    <Key>
+      <PropertyRef Name="SeverityID" />
+    </Key>
+    <Property Name="SeverityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SeverityName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SupportSystemStatus">
+    <Key>
+      <PropertyRef Name="StatusID" />
+    </Key>
+    <Property Name="StatusID" Type="int" Nullable="false" />
+    <Property Name="StatusName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" MaxLength="11" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="RolesID" Type="int" />
+    <Property Name="Aktivan" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RolesID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="RolesID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Main_Comment">
+    <End Role="Comment" Type="Self.Comment" Multiplicity="0..1" />
+    <End Role="Main" Type="Self.Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comment">
+        <PropertyRef Name="CommentID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="CommentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemCategory">
+    <End Role="SupportSystemCategory" Type="Self.SupportSystemCategory" Multiplicity="0..1" />
+    <End Role="Main" Type="Self.Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemCategory">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemPriority">
+    <End Role="SupportSystemPriority" Type="Self.SupportSystemPriority" Multiplicity="0..1" />
+    <End Role="Main" Type="Self.Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemPriority">
+        <PropertyRef Name="PriorityID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="PriorityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemSection">
+    <End Role="SupportSystemSection" Type="Self.SupportSystemSection" Multiplicity="0..1" />
+    <End Role="Main" Type="Self.Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemSection">
+        <PropertyRef Name="SectionID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="SectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemSeverity">
+    <End Role="SupportSystemSeverity" Type="Self.SupportSystemSeverity" Multiplicity="0..1" />
+    <End Role="Main" Type="Self.Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemSeverity">
+        <PropertyRef Name="SeverityID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="SeverityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Main_SupportSystemStatus">
+    <End Role="SupportSystemStatus" Type="Self.SupportSystemStatus" Multiplicity="0..1" />
+    <End Role="Main" Type="Self.Main" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemStatus">
+        <PropertyRef Name="StatusID" />
+      </Principal>
+      <Dependent Role="Main">
+        <PropertyRef Name="StatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Roles">
+    <End Role="SupportSystemRole" Type="Self.SupportSystemRole" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemRole">
+        <PropertyRef Name="RolesID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RolesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_Roles">
+    <End Role="SupportSystemRole" Type="Self.SupportSystemRole" Multiplicity="1" />
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SupportSystemRole">
+        <PropertyRef Name="RolesID" />
+      </Principal>
+      <Dependent Role="UserRoles">
+        <PropertyRef Name="RolesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRoles_User1">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserRoles">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SupportSystemSrdjanModelStoreContainer">
+    <EntitySet Name="Comment" EntityType="Self.Comment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Main" EntityType="Self.Main" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupportSystemCategory" EntityType="Self.SupportSystemCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupportSystemPriority" EntityType="Self.SupportSystemPriority" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupportSystemRole" EntityType="Self.SupportSystemRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupportSystemSection" EntityType="Self.SupportSystemSection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupportSystemSeverity" EntityType="Self.SupportSystemSeverity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupportSystemStatus" EntityType="Self.SupportSystemStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Main_Comment" Association="Self.FK_Main_Comment">
+      <End Role="Comment" EntitySet="Comment" />
+      <End Role="Main" EntitySet="Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemCategory" Association="Self.FK_Main_SupportSystemCategory">
+      <End Role="SupportSystemCategory" EntitySet="SupportSystemCategory" />
+      <End Role="Main" EntitySet="Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemPriority" Association="Self.FK_Main_SupportSystemPriority">
+      <End Role="SupportSystemPriority" EntitySet="SupportSystemPriority" />
+      <End Role="Main" EntitySet="Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemSection" Association="Self.FK_Main_SupportSystemSection">
+      <End Role="SupportSystemSection" EntitySet="SupportSystemSection" />
+      <End Role="Main" EntitySet="Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemSeverity" Association="Self.FK_Main_SupportSystemSeverity">
+      <End Role="SupportSystemSeverity" EntitySet="SupportSystemSeverity" />
+      <End Role="Main" EntitySet="Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Main_SupportSystemStatus" Association="Self.FK_Main_SupportSystemStatus">
+      <End Role="SupportSystemStatus" EntitySet="SupportSystemStatus" />
+      <End Role="Main" EntitySet="Main" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Roles" Association="Self.FK_User_Roles">
+      <End Role="SupportSystemRole" EntitySet="SupportSystemRole" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_Roles" Association="Self.FK_UserRoles_Roles">
+      <End Role="SupportSystemRole" EntitySet="SupportSystemRole" />
+      <End Role="UserRoles" EntitySet="UserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRoles_User1" Association="Self.FK_UserRoles_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserRoles" EntitySet="UserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
